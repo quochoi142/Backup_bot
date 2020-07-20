@@ -25,7 +25,7 @@ class StopAroundDialog extends CancelAndHelpDialog {
         this.addDialog(new TextPrompt(TEXT_PROMPT))
             .addDialog(new TextPrompt(LOCATION, this.locationValidator))
             .addDialog(new WaterfallDialog(WATERFALL_DIALOG, [
-                this.openMapStep.bind(this),
+                this.getLocationStep.bind(this),
                 this.searchStopsStep.bind(this)
             ]));
 
@@ -64,7 +64,7 @@ class StopAroundDialog extends CancelAndHelpDialog {
 
 
 
-    async getLocationStep(stepContext) {
+    /* async getLocationStep(stepContext) {
 
         // const result = stepContext.options;
         // if (!result.origin) {
@@ -96,7 +96,6 @@ class StopAroundDialog extends CancelAndHelpDialog {
 
                 })
 
-
             });
             var myUrl;
             await promise.then(url => {
@@ -119,7 +118,7 @@ class StopAroundDialog extends CancelAndHelpDialog {
 
         return await stepContext.next(result.origin)
 
-    }
+    } */
 
     //  async openMap(stepContext) {
     //     if (stepContext.result != 'map')
@@ -139,7 +138,7 @@ class StopAroundDialog extends CancelAndHelpDialog {
     // }
 
     //code here
-    async openMapStep(stepContext) {
+    async getLocationStep(stepContext) {
 
         var result = stepContext.options;
         if (!result.origin) {
@@ -197,6 +196,11 @@ class StopAroundDialog extends CancelAndHelpDialog {
                                         "image_url": "https://i.pcmag.com/imagery/articles/05ADBV1ymnSvbBWkkDkQIzv-5.fit_scale.size_2698x1517.v1569489490.jpg",
                                         "subtitle": "Bạn có thể chọn 1 trong các lựa chọn bên dưới hoặc nhập trực tiếp.",
                                         "buttons": [
+                                            {
+                                                "type": "postback",
+                                                "title": "đh KHTN, 227 nguyễn văn cừ",
+                                                "payload": "đh KHTN, 227 nguyễn văn cừ",
+                                            },
                                             {
                                                 "type": "postback",
                                                 "title": "Mở map chọn vị trí",
