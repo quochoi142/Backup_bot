@@ -1,0 +1,31 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "Image",
+      "title": "Hello",
+      "url": "https://image.shutterstock.com/image-vector/welcome-poster-spectrum-brush-strokes-260nw-1146069941.jpg",
+      "width": "stretch",
+      "style": "default"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Tìm đường",
+      "data": "Tìm đường"
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Tìm trạm",
+      "data": "Tìm trạm"
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Tìm xe bus",
+      "data": "Tìm xe bus"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "Image",
+            "url": "https://image.freepik.com/free-vector/happy-cute-kids-wait-school-bus-with-friends_97632-1086.jpg",
+            "width": "stretch",
+            "style": "default"
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Đại học khoa học tự nhiên, Linh Trung, Thủ Đức.",
+            "data":  "Đại học khoa học tự nhiên, Linh Trung, Thủ Đức."
+            
+        },
+        {
+            "type": "Action.Submit",
+            "title": "Đại học khoa học tự nhiên, 227 nguyễn văn cừ.",
+            "data":  "Đại học khoa học tự nhiên, 227 nguyễn văn cừ."
+            
+        },
+        {
+            "type": "Action.Submit",
+            "title": "Suối tiên",
+            "data": "Suối tiên"
+            
+        }
+    ]
+}
